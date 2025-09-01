@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8">
+  <title>公式カフェ</title>
+</head>
+<body>
+  <h1>ようこそ 公式カフェへ</h1>
+  <h2>メニュー</h2>
+  <form action="/order" method="post">
+    <table>
+      <tr><th>商品</th><th>価格</th><th>数量</th></tr>
+      <tr><td>ブレンドコーヒー</td><td>300円</td><td><input type="number" name="coffee" min="0" value="0"></td></tr>
+      <tr><td>カフェラテ</td><td>350円</td><td><input type="number" name="latte" min="0" value="0"></td></tr>
+      <tr><td>カプチーノ</td><td>400円</td><td><input type="number" name="cappuccino" min="0" value="0"></td></tr>
+      <tr><td>紅茶</td><td>250円</td><td><input type="number" name="tea" min="0" value="0"></td></tr>
+      <tr><td>チーズケーキ</td><td>450円</td><td><input type="number" name="cake" min="0" value="0"></td></tr>
+    </table>
+    <p>お名前: <input type="text" name="name"></p>
+    <button type="submit">注文する</button>
+  </form>
+</body>
+</html>
